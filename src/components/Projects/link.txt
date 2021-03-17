@@ -1,0 +1,3 @@
+put this in line 85 of projects.jsx
+href={url || '#!'}
+target="_blank

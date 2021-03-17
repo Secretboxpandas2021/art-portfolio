@@ -50,12 +50,13 @@ const Projects = () => {
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
                       <a
-                        target="_blank"
+                        target=""
                         rel="noopener noreferrer"
                         className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
+                        href={url || '/'}
+                        style={{ visibility: 'hidden' }}
                       >
-                        See Live
+                        Check it out!
                       </a>
 
                       {repo && (
@@ -80,12 +81,7 @@ const Projects = () => {
                     distance="30px"
                   >
                     <div className="project-wrapper__image">
-                      <a
-                        href={url || '#!'}
-                        target="_blank"
-                        aria-label="Project Link"
-                        rel="noopener noreferrer"
-                      >
+                      <a href="/" aria-label="Project Link" rel="noopener noreferrer">
                         <Tilt
                           options={{
                             reverse: false,
